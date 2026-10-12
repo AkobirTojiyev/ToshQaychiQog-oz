@@ -12,10 +12,11 @@ function getHumanChoice(){
     return prompt('Iltimos `tosh, qaychi, qogoz` sozlaridan birini kiriting', '')
 }
 
-let humanScore = 0
-let compScore = 0
+
 
 function playRound(com, odam){
+    let humanScore = 0
+    let compScore = 0
     console.log(`Kom-${com} & Odam - ${odam}`)
     odam = odam.toLowerCase()
     if(odam=='tosh' && com=='tosh' || odam=='qaychi' && com=='qaychi' || odam=='qogoz' && com=='qogoz'){
